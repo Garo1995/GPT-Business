@@ -1,0 +1,69 @@
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Semibold.eot');
+    src: local('Myriad Pro Semibold'), local('MyriadPro-Semibold'),
+    url('MyriadPro-Semibold.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Semibold.woff2') format('woff2'),
+    url('MyriadPro-Semibold.woff') format('woff'),
+    url('MyriadPro-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Regular.eot');
+    src: local('Myriad Pro Regular'), local('MyriadPro-Regular'),
+    url('MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Regular.woff2') format('woff2'),
+    url('MyriadPro-Regular.woff') format('woff'),
+    url('MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Bold.eot');
+    src: local('Myriad Pro Bold'), local('MyriadPro-Bold'),
+    url('MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Bold.woff2') format('woff2'),
+    url('MyriadPro-Bold.woff') format('woff'),
+    url('MyriadPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('MyriadPro-Light.eot');
+    src: local('Myriad Pro Light'), local('MyriadPro-Light'),
+    url('MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+    url('MyriadPro-Light.woff2') format('woff2'),
+    url('MyriadPro-Light.woff') format('woff'),
+    url('MyriadPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+
+@font-face {
+    font-family: 'Druk Cyr';
+    src: url('DrukCyr-Medium.eot');
+    src: local('Druk Cyr Medium'), local('DrukCyr-Medium'),
+    url('DrukCyr-Medium.eot?#iefix') format('embedded-opentype'),
+    url('DrukCyr-Medium.woff2') format('woff2'),
+    url('DrukCyr-Medium.woff') format('woff'),
+    url('DrukCyr-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
