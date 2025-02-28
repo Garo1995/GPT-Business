@@ -167,6 +167,9 @@ p{
 .advanced-btn{
     display: none;
 }
+.advanced-photo-mob{
+    display: none;
+}
 
 @media (max-width: 1199px){
     .advanced-banner {
@@ -295,13 +298,20 @@ p{
     .advanced-banner:before {
         background-position: 26%;
     }
-
-
+    .advanced-photo-desc{
+        display: none;
+    }
+    .advanced-photo-mob{
+        display: block;
+    }
     .advanced-photo {
         top: -41px;
     }
     .advanced-btn {
         margin-top: 95px;
+    }
+    .advanced-photo img {
+        transform: scale(1.2);
     }
 }
 
