@@ -167,9 +167,7 @@ p{
 .advanced-btn{
     display: none;
 }
-.advanced-pic-mob{
-    display: none;
-}
+
 @media (max-width: 1199px){
     .advanced-banner {
         padding-top: 162px;
@@ -279,15 +277,10 @@ p{
 }
 
 @media (max-width: 470px){
-    .advanced-pic-desc{
-        display: none;
-    }
-    .advanced-pic-mob{
-        display: block;
-    }
+
     .advanced-photo img {
         width: 100%;
-        transform: scale(1.1);
+        transform: scale(1.4);
     }
     .advanced-photo {
         top: -46px;
@@ -352,6 +345,7 @@ p{
 }
 .generation-users img{
     margin-left: -10px;
+    width: 62px;
 }
 .generation-users-count span{
     color: rgba(255, 255, 255, 1);
@@ -998,6 +992,16 @@ p{
     }
     .process-btn {
         margin-top: -36px;
+    }
+    .process-rel{
+        padding: 0;
+    }
+    .process-info{
+        padding: 0 20px;
+
+    }
+    .process-btn {
+        padding: 0 20px;
     }
 }
 
