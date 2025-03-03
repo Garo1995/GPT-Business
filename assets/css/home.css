@@ -48,11 +48,8 @@ p{
 }
 .btn:hover, .btn:active{
     box-shadow: 0px 0px 35px 0px rgba(100, 197, 255, 0.6);
+}
 
-}
-.btn {
-    cursor: url(../img/cursor.png), auto;
-}
 
 
 .btn-cursor {
@@ -64,16 +61,21 @@ p{
     line-height: 21.6px;
     color: #181919;
     text-align: center;
-    overflow: hidden;
     box-shadow: 0px 10px 65px 0px #64C5FF80;
     position: absolute;
-    display: none;
-    right: -165px;
-    bottom: -91px;
-
+    right: -172px;
+    bottom: -95px;
 }
-.btn:hover .btn-cursor{
-    display: block;
+.btn-cursor:before{
+    content: "";
+    background-image: url(../img/cursor.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -40px;
+    left: -45px;
 }
 .title-all-box{
     gap: 17px;
@@ -116,9 +118,13 @@ p{
         right: 25px;
         bottom: -60px;
         box-shadow: 0px 7px 45.5px 0px #64C5FF80;
-
     }
-
+    .btn-cursor:before {
+        width: 35px;
+        height: 35px;
+        top: -24px;
+        left: -25px;
+    }
 }
 
 
