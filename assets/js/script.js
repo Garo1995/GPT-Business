@@ -154,13 +154,11 @@ let usersSwiper = new Swiper(".users-slider", {
     slidesPerView: 3,
     spaceBetween: 10,
     mousewheel: false,
-
-    speed: 1200,
+    speed: 1600,
     autoplay: {
-        delay: 1500,
+        delay: 1800,
         disableOnInteraction: false,
     },
-
     breakpoints: {
         '991': {
             slidesPerView: 3,
@@ -169,45 +167,67 @@ let usersSwiper = new Swiper(".users-slider", {
         '767': {
             slidesPerView: 2,
             spaceBetween: 10,
-            direction: "horizontal",
-            mousewheel: false,
-            slidesPerGroup: 1,
-            autoplay: false,
         },
         '570': {
             slidesPerGroup: 1,
 
             slidesPerView: 2,
             spaceBetween: 10,
-            direction: "horizontal",
-            mousewheel: false,
-            autoplay: false,
         },
         '320': {
             slidesPerView: 1,
             slidesPerGroup: 1,
             spaceBetween: 10,
-            direction: "horizontal",
-            mousewheel: false,
-            autoplay: false,
         },
     },
     pagination: {
         el: ".our-users-pagination",
         clickable: true,
     },
-    on: {
-        init() {
-            this.el.addEventListener('mouseenter', () => {
-                this.autoplay.stop();
-            });
 
-            this.el.addEventListener('mouseleave', () => {
-                this.autoplay.start();
-            });
-        }
+});
+
+
+
+let swiper2 = new Swiper(".users-stats-slider", {
+    spaceBetween: 10,
+    effect: "fade",
+    thumbs: {
+        swiper: usersSwiper,
     },
 });
 
 
 
+
+
+let usersMobileSwiper = new Swiper(".users-mobile-slider", {
+    slidesPerView: 3,
+    spaceBetween: 10,
+    loop: true,
+    breakpoints: {
+        '1000': {
+            slidesPerView: 3,
+            spaceBetween: 10,
+        },
+        '767': {
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        '570': {
+            slidesPerGroup: 1,
+
+            slidesPerView: 2,
+            spaceBetween: 10,
+        },
+        '320': {
+            slidesPerView: 1,
+            slidesPerGroup: 1,
+            spaceBetween: 10,
+        },
+    },
+    pagination: {
+        el: ".users-mobile-pagination",
+        clickable: true,
+    },
+});

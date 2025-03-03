@@ -43,14 +43,38 @@ p{
     font-size: 20px;
     line-height: 20px;
     height: 64px;
+    position: relative;
+
 }
 .btn:hover, .btn:active{
     box-shadow: 0px 0px 35px 0px rgba(100, 197, 255, 0.6);
 
 }
+.btn {
+    cursor: url(../img/cursor.png), auto;
+}
 
 
+.btn-cursor {
+    padding: 21px 36px;
+    border-radius: 50px;
+    background: #fff;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21.6px;
+    color: #181919;
+    text-align: center;
+    overflow: hidden;
+    box-shadow: 0px 10px 65px 0px #64C5FF80;
+    position: absolute;
+    display: none;
+    right: -165px;
+    bottom: -91px;
 
+}
+.btn:hover .btn-cursor{
+    display: block;
+}
 .title-all-box{
     gap: 17px;
     position: relative;
@@ -84,7 +108,18 @@ p{
 }
 
 
+@media (max-width: 767px){
+    .btn-cursor {
+        padding: 14px 25px;
+        font-size: 12px;
+        line-height: 15px;
+        right: 25px;
+        bottom: -60px;
+        box-shadow: 0px 7px 45.5px 0px #64C5FF80;
 
+    }
+
+}
 
 
 /*============-global-style-end-===========*/
@@ -1038,6 +1073,11 @@ p{
     white-space: nowrap;
     letter-spacing: 6px;
     font-family: 'Druk Cyr';
+    transition: 0.3s;
+}
+.programming-name strong:hover{
+    color: #ffffff;
+    cursor: pointer;
 }
 .color-sliver strong{
     color: #2C2C2C;
@@ -1086,7 +1126,8 @@ p{
     .programming-name strong {
         font-size: 30px;
         line-height: 30px;
-        letter-spacing: 2px;
+        letter-spacing: 3px;
+        color: #ffffff;
     }
 
 }
@@ -1136,17 +1177,25 @@ p{
     position: relative;
     z-index: 1;
 }
-
-.our-users-stats{
+.users-stats-block{
     max-width: 338px;
     width: 100%;
-    box-shadow: 0px 0px 14.58px 0px rgba(0, 0, 0, 0.16);
-    border: 0.91px solid rgba(39, 39, 39, 1);
-    border-radius: 18px;
-    background: rgba(24, 25, 25, 1);
 }
-.our-users-stats img{
+
+.our-users-stats .our-users-box{
+    flex-direction: column;
+    gap: 0;
+    padding: 0;
+    margin: 0 auto;
+}
+.our-users-stats .our-users-box img{
     border-radius: 10px 10px 0 10px;
+    max-width: 100%;
+    height: 237px;
+}
+.users-mobile-carts{
+    display: none;
+    position: relative;
 }
 
 .our-users-rel{
@@ -1194,7 +1243,8 @@ p{
     padding: 14px;
     gap: 22px;
     background: rgba(24, 25, 25, 1);
-
+    cursor: pointer;
+    transition: 0.3s;
 }
 .our-users-box img{
     max-width: 112px;
@@ -1278,14 +1328,14 @@ p{
     .reviews-main:before {
         height: 300px;
     }
-    .our-users-stats{
+    .our-users-flex{
         display: none;
     }
-    .our-users-rel {
-        max-width: 100%;
-        padding-bottom: 38px;
+    .users-mobile-carts{
+        display: block;
+        padding-bottom: 30px;
     }
-    our-users-rel .swiper-pagination{
+    .users-mobile-carts .swiper-pagination{
         bottom: 0;
     }
     .our-users-rel:before{
@@ -1300,6 +1350,9 @@ p{
         gap: 0;
         flex-direction: column;
         height: 100%;
+        max-width: 440px;
+        width: 100%;
+        margin: 0 auto;
     }
     .our-users-box img {
         max-width: 100%;
@@ -1581,6 +1634,8 @@ p{
     gap: 9px;
     padding: 10px 12px;
     margin-top: -90px;
+    position: relative;
+    z-index: 3;
 }
 .register-profile-main h4{
     margin-top: 19px;
